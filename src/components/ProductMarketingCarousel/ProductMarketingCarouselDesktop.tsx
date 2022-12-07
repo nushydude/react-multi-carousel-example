@@ -6,8 +6,8 @@ import { CarouselItemData } from "./types";
 import LongCarouselItem from "../Long";
 
 const CarouselItemWrapper = styled.div`
-  padding-left: 8px;
-  padding-right: 8px;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
 `;
 
 type Props = {
@@ -21,9 +21,11 @@ const ProductMarketingCarouselDesktop = ({ items }: Props) => {
   return (
     <Carousel {...config} ref={carouselRef} deviceType="desktop">
       {items.map((feature, idx) => (
-        <CarouselItemWrapper key={idx}>
-          <LongCarouselItem {...feature} />
-        </CarouselItemWrapper>
+        <div key={idx}>
+          <CarouselItemWrapper>
+            <LongCarouselItem {...feature} />
+          </CarouselItemWrapper>
+        </div>
       ))}
     </Carousel>
   );
