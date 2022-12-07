@@ -6,8 +6,8 @@ import { CarouselItemData } from "./types";
 import LongCarouselItem from "../Long";
 
 const CarouselItemWrapper = styled.div`
-  margin-left: 7.5px;
-  margin-right: 7.5px;
+  margin-left: 8px;
+  margin-right: 8px;
 `;
 
 type Props = {
