@@ -4,11 +4,6 @@ import styled from "styled-components";
 import ProductMarketingCarouselDesktop from "./ProductMarketingCarouselDesktop";
 import "react-multi-carousel/lib/styles.css";
 
-const Wrapper = styled.div`
-  width: 100%;
-  max-width: 100%;
-`;
-
 type Item = {
   heading?: string;
   description?: string;
@@ -45,11 +40,7 @@ const ProductMarketingCarousel = ({ content }: Props) => {
   // it's no longer device-agnostic. To handle this, we would render two
   // carousels - one for desktop and one for mobile - and conditionally make
   // them visible via media queries.
-  return (
-    <Wrapper>
-      <ProductMarketingCarouselDesktop heading={heading} items={items} />
-    </Wrapper>
-  );
+  return <ProductMarketingCarouselDesktop heading={heading} items={items} />;
 };
 
 export default ProductMarketingCarousel;

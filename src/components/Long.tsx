@@ -6,6 +6,7 @@ const Card = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: white;
 `;
 
 const Image = styled.img`
