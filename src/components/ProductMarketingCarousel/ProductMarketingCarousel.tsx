@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import styles from "./styles.ts";
+// import styles from "./styles.ts";
 import ProductMarketingCarouselDesktop from "./ProductMarketingCarouselDesktop";
+import "react-multi-carousel/lib/styles.css";
 
 const Wrapper = styled.div`
   width: 100%;
   max-width: 100%;
-  ${styles};
 `;
 
 type Item = {
