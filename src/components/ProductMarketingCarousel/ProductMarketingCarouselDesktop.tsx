@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import Carousel from "react-multi-carousel";
 import styled from "styled-components";
 import config from "./config";
@@ -16,10 +16,8 @@ type Props = {
 };
 
 const ProductMarketingCarouselDesktop = ({ items }: Props) => {
-  const carouselRef = useRef<Carousel>(null);
-
   return (
-    <Carousel {...config} ref={carouselRef} deviceType="desktop">
+    <Carousel {...config}>
       {items.map((feature, idx) => (
         <div key={idx}>
           <CarouselItemWrapper>
